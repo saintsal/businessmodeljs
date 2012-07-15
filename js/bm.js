@@ -1,6 +1,6 @@
 (function() {
 
-  $.fn.extend({
+  $(document).fn.extend({
     businessModel: function() {
         var modelsvg;
         var fillcolor = {};
