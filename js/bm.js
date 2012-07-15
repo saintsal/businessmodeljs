@@ -71,8 +71,3 @@
 
 }).call(this);
 
-
-jQuery(document).ready(function() {
-    jQuery('blockquote.bm').each(function(index) { jQuery(this).businessModel(); });
-});
-

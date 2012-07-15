@@ -9,26 +9,25 @@ Requires jQuery.
 
 Instructions
 ------------
-# Include jQuery
-# Include bm.js
-# Create business models thumbnails around blockquotes by adding classes, .bm (or as you see fit) to denote a business model, then addition classes to select or highlight blocks.
-
-seg - customer segment
-val - value proposition
-res - key resource
-par - key partners
-act - key activitiess
-cha - channel
-rel - relationships
-cos - costs
-rev - revenues
+1. Include jQuery
+2. Include bm.js
+3. Create business models thumbnails around blockquotes by adding classes, .bm (or as you see fit) to denote a business model, then addition classes to select or highlight blocks.
+* seg - customer segment
+* val - value proposition
+* res - key resource
+* par - key partners
+* act - key activitiess
+* cha - channel
+* rel - relationships
+* cos - costs
+* rev - revenues
 
 You can also highlight the business model environment:
 
-ind - industry forces (good for highlighting competition and alternatives)
-mar - market forces (good for highlighting customer needs, jobs and problems)
-tre - trends
-mac - macro-economic forces (good for highlighting market size and investment issues)
+* ind - industry forces (good for highlighting competition and alternatives)
+* mar - market forces (good for highlighting customer needs, jobs and problems)
+* tre - trends
+* mac - macro-economic forces (good for highlighting market size and investment issues)
 (You can read up on the Business Model Environement in the book Business Model Generation, or here: http://www.businessmodelalchemist.com/2009/07/scanning-your-business-models.html )
 
 Examples
@@ -51,7 +50,7 @@ Examples
 <blockquote class="bm rev rel-h">Will this price affect retention?</blockquote>
 ```
 
-# Activate the thumbnails by calling this function. You probably want to do this in document.onReady(). (You can change the business model class to something other than .bm here. )
+4. Activate the thumbnails by calling this function. You probably want to do this in document.onReady(). (You can change the business model class to something other than .bm here. )
 ```javascript
     $('blockquote.bm').each(function(index) { jQuery(this).businessModel(); });
 ```
