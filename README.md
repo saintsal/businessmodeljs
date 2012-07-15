@@ -12,6 +12,7 @@ Instructions
 1. Include jQuery
 2. Include bm.js
 3. Create business models thumbnails around blockquotes by adding classes, .bm (or as you see fit) to denote a business model, then addition classes to select or highlight blocks.
+
 * seg - customer segment
 * val - value proposition
 * res - key resource
