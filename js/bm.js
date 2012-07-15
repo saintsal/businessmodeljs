@@ -26,7 +26,6 @@
                 }
             }
         }
-        console.log(fillcolor);
         
         modelsvg = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80.875px" height="72.501px" viewBox="-17.188 -18.029 80.875 72.501" enable-background="new -17.188 -18.029 80.875 72.501" xml:space="preserve">';
         
