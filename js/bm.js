@@ -1,25 +1,25 @@
 (function() {
 
-  $(document).fn.extend({
+  jQuery.fn.extend({
     businessModel: function() {
         var modelsvg;
         var fillcolor = {};
         var blocks = ['seg', 'val', 'act', 'res', 'par', 'rev', 'cos', 'cha', 'rel', 'ind', 'tre', 'mac', 'mar'];
 
-        $(this).css('border', 'none');
-        $(this).css('padding', '15px 5px 5px 100px');
-        $(this).css('position', 'relative');
-        $(this).css('min-height', '50px');
+        jQuery(this).css('border', 'none');
+        jQuery(this).css('padding', '15px 5px 5px 100px');
+        jQuery(this).css('position', 'relative');
+        jQuery(this).css('min-height', '50px');
 
         for (var key in blocks) {
-            if ($(this).hasClass(blocks[key])) {
+            if (jQuery(this).hasClass(blocks[key])) {
                 fillcolor[blocks[key]] = "000000";
             }
-            else if ($(this).hasClass(blocks[key]+'-h')) {
+            else if (jQuery(this).hasClass(blocks[key]+'-h')) {
                 fillcolor[blocks[key]] = "ED1F24";
             }
             else {
-                if ($.inArray(blocks[key], ['ind', 'tre', 'mac', 'mar']) > -1) {
+                if (jQuery.inArray(blocks[key], ['ind', 'tre', 'mac', 'mar']) > -1) {
                     fillcolor[blocks[key]] = "f0f0f0";
                 } else {
                     fillcolor[blocks[key]] = "d0d0d0";
@@ -58,13 +58,13 @@
         
         modelsvg += '</svg>';
 
-        div = $("<div>");
+        div = jQuery("<div>");
         div.html(modelsvg);
         div.css('position', 'absolute');
         div.css('top', 0);
         div.css('left', '0px');
       
-        $(this).append(div);
+        jQuery(this).append(div);
 
     }
   });
@@ -72,7 +72,7 @@
 }).call(this);
 
 
-$(document).ready(function() {
-    $('blockquote.bm').each(function(index) { $(this).businessModel(); });
+jQuery(document).ready(function() {
+    jQuery('blockquote.bm').each(function(index) { jQuery(this).businessModel(); });
 });
 
