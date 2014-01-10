@@ -26,9 +26,9 @@
                 }
             }
         }
-        
+
         modelsvg = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80.875px" height="72.501px" viewBox="-17.188 -18.029 80.875 72.501" enable-background="new -17.188 -18.029 80.875 72.501" xml:space="preserve">';
-        
+
         //par
         modelsvg += '<rect fill="#'+fillcolor['par']+'" width="7.375" height="25.625"/>';
         //seg
@@ -39,6 +39,7 @@
         //act
         modelsvg += '<rect x="9.5" y="14.125" fill="#'+fillcolor['res']+'" width="7.375" height="11.625"/>';
         //cha
+
         modelsvg += '<rect x="28.625" y="14.125" fill="#'+fillcolor['cha']+'" width="7.375" height="11.625"/>';
         //rel
         modelsvg += '<rect x="28.5" fill="#'+fillcolor['rel']+'" width="7.375" height="11.625"/>';
@@ -54,7 +55,7 @@
         modelsvg += '<path fill="#'+fillcolor['tre']+'" d="M17.45-6.934l-0.025,0.023l5.278,5.329l5.329-5.277l-0.024-0.024c2.201-2.666,2.066-6.619-0.418-9.127 c-2.647-2.672-6.961-2.694-9.635-0.045C15.447-13.572,15.275-9.621,17.45-6.934z"/>';
         //mac
         modelsvg += '<path fill="#'+fillcolor['mac']+'" d="M28.05,43.377l0.024-0.022l-5.278-5.329l-5.329,5.277l0.024,0.024c-2.201,2.666-2.066,6.618,0.418,9.127 c2.647,2.673,6.961,2.694,9.635,0.046C30.053,50.015,30.225,46.064,28.05,43.377z"/>';
-        
+
         modelsvg += '</svg>';
 
         div = jQuery("<div>");
@@ -62,7 +63,7 @@
         div.css('position', 'absolute');
         div.css('top', 0);
         div.css('left', '0px');
-      
+
         jQuery(this).append(div);
 
     }
