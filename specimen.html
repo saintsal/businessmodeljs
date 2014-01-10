@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Business Models JS</title>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="js/bm.js"></script>
+    </head>
+    <body>
+        <h1>Test</h1>
+
+<blockquote class="bm">Business model</blockquote>
+<blockquote class="bm res">Here's what we built. (Key resources selected.)</blockquote>
+<blockquote class="bm cos-h res">How much will this actually cost to build to completion? (Key resources selected, costs highlighted.)</blockquote>
+<blockquote class="bm seg">Let me tell you about this customer segment...</blockquote>
+<blockquote class="bm seg mar">We've learned about their needs.</blockquote>
+<blockquote class="bm seg ind">We learned about their alternatives.</blockquote>
+<blockquote class="bm seg mac">And verified it's a growing market.</blockquote>
+<blockquote class="bm mac">Our investors are eligible for tax credits.  </blockquote>
+<blockquote class="bm res val-h seg">Will this segment use this asset this way?</blockquote>
+<blockquote class="bm val seg">What do they really want?</blockquote>
+<blockquote class="bm act-h val">Can we deliver what they want?</blockquote>
+<blockquote class="bm act par-h">Can we get help supporting though a partner?</blockquote>
+<blockquote class="bm cha tre">Domain experts have told us that customers are starting to trade expertise on forums.</blockquote>
+<blockquote class="bm rev seg cha-h">Will customers buy subscriptions if we advertise on this forum?</blockquote>
+<blockquote class="bm rev rel-h">Will this price affect retention?</blockquote>
+
+        <script>
+$(function() {
+            $('blockquote.bm').each(function(index) { jQuery(this).businessModel(); });
+});
+        </script>
+    </body>
+</html>
